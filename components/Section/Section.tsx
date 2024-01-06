@@ -16,7 +16,7 @@ const Section = ({
   return (
     <section
       id={id}
-      className={`h-screen flex ${!noPadding && "pt-[var(--header-height)]"} ${secondary && "bg-secondary"} ${secondary && "text-primary"} ${extraClasses}`}
+      className={`lg:h-screen flex flex-col-reverse lg:flex-row ${!noPadding && "pt-[var(--header-height)]"} ${secondary && "bg-secondary"} ${secondary && "text-primary"} ${extraClasses}`}
     >
       {children}
     </section>

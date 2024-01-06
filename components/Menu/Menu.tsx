@@ -33,7 +33,7 @@ const Menu = () => {
   
   return (
     <Section id="menu" noPadding>
-      <div className="flex-1">
+      <div className="basis-1/2">
         <Image
           src={img(current)}
           alt="image of a plate related to the menu tab selected"
@@ -41,15 +41,15 @@ const Menu = () => {
           style={{ objectFit: "cover" }}
         />
       </div>
-      <div className="flex-1 flex flex-col mt-[var(--header-height)] pt-6 items-center">
-        <div className="text-6xl font-bold p-4 pb-6">Menu</div>
+      <div className="basis-1/2 min-h-[50vh] flex flex-col mt-[var(--header-height)] pb-8 lg:pt-6 items-center">
+        <div className="text-2xl md:text-4xl xl:text-6xl font-bold p-4 pb-6">Menu</div>
         <div className="flex">
           {(["appetizers", "pasta", "salads", "desserts", "drinks"] as MenuCourses[]).map((item) => (
             <div
               key={item}
               onClick={() => setCurrent(item)}
               className={`
-                ${item === current ? 'underline underline-offset-8 text-white' : 'text-gray-300 hover:underline hover:underline-offset-8 hover:text-white'} rounded-md px-3 py-2 text-lg cursor-pointer`
+                ${item === current ? 'underline underline-offset-8 text-white' : 'text-gray-300 hover:underline hover:underline-offset-8 hover:text-white'} rounded-md px-3 py-2 text-sm md:text-md xl:text-lg cursor-pointer`
               }
               aria-current={item  ? 'page' : undefined}
             >
@@ -57,7 +57,7 @@ const Menu = () => {
             </div>
           ))}
         </div>
-        <div className="mt-6 mx-16 self-start">
+        <div className="mt-6 mx-6 lg:mx-8 xl:mx-16 self-start">
           <ListMenu items={MENU[current]} />
         </div>
       </div>

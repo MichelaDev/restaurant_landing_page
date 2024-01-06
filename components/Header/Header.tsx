@@ -81,11 +81,11 @@ export default function Header() {
                   src={logo}
                   alt="Culinary Heaven"
                 />
-                <div className='block sm:hidden md:block'>CULINARY HEAVEN</div>
+                <div className='block sm:hidden lg:block'>CULINARY HEAVEN</div>
               </div>
 
               {/* Desktop menu */}
-              <div className="hidden sm:flex flex-1 items-center justify-center sm:items-stretch">
+              <div className="hidden sm:flex basis-1/2 items-center justify-center sm:items-stretch">
                 <div className="flex">
                   {navigation.map((item) => (
                     <div

@@ -4,14 +4,14 @@ import Section from "../Section/Section";
 const Contacts = () => {
   return (
     <Section id="contacts" noPadding secondary>
-      <div className="flex-1">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423640.9110316075!2d-0.35383285075260673!3d51.52539473228023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondra%2C%20Regno%20Unito!5e0!3m2!1sit!2sit!4v1704559505538!5m2!1sit!2sit" width="100%" height="100%" style={{ border: 0 }} allowFullScreen={false} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+      <div className="basis-1/2">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423640.9110316075!2d-0.35383285075260673!3d51.52539473228023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondra%2C%20Regno%20Unito!5e0!3m2!1sit!2sit!4v1704559505538!5m2!1sit!2sit" className="h-[50vh] lg:h-full" width="100%" height="100%" style={{ border: 0 }} allowFullScreen={false} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
       </div>
-      <div className="flex-1 flex flex-col items-center justify-center mt-[var(--header-height)]">
-        <div className="font-bold text-6xl">
+      <div className="basis-1/2 pb-8 min-h-[50vh] flex flex-col items-center justify-center mt-[var(--header-height)]">
+        <div className="font-bold text-2xl md:text-4xl xl:text-6xl">
           Contacts
         </div>
-        <div className="min-h-96 text-xl px-16 flex flex-col justify-evenly items-center" >
+        <div className="min-h-96 text-md md:text-lg xl:text-xl px-16 flex flex-col justify-evenly items-center" >
           <p>123 Somewhere, London</p>
           <p>+44 12345678</p>
           <p>info@culinaryheaven.com</p>

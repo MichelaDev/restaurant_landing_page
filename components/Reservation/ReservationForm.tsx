@@ -23,7 +23,7 @@ const ReservationForm = () => {
   };
 
   return (
-    <div className="max-w-lg w-1/2 mx-auto bg-[#e6dfd8] p-6 rounded-md shadow-md">
+    <div className="w-2/3 xl:w-1/2 mx-auto bg-[#e6dfd8] p-6 rounded-md shadow-md">
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
           <label className="block text-primary text-sm font-bold mb-2" htmlFor="name">
